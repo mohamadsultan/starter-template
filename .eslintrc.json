@@ -18,10 +18,16 @@
     },
     "plugins": [
         "react",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "eslint-plugin-prettier"
     ],
     "rules": {
-        "react/react-in-jsx-scope": "off"
+        "react/react-in-jsx-scope": "off",
+        "no-console": 1,
+        "no-undef":"off",
+        "prettier/prettier": ["error"],
+        "linebreak-style": ["error", "unix"],
+        "comma-dangle": ["warn", "always-multiline"]
     },
     "settings": {
         "react": {
